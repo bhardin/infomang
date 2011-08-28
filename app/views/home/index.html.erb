@@ -1,2 +1,22 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id="home">
+
+  <h1>InfoMang</h1>
+
+  <div class="alt">Find info on anyone!</div>
+
+  <% if !Apikey.find_by_name('rapleaf') %>
+      <pre class="notice">Don't forget to add your rapleaf api key to rails. You can do this as follows.
+
+      Boot up the rails console and type the following:
+      rails console
+      Apikey.create!(:name => 'rapleaf', :key => 'ENTER YOUR KEY HERE')
+      </pre>
+  <% end %>
+
+  <%= form_tag(users_path, :method => "get") do %>
+    <%= label_tag(:q, "Email:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+
+</div>
