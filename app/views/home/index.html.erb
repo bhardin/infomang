@@ -13,7 +13,7 @@
       </pre>
   <% end %>
 
-  <%= form_tag(users_path, :method => "get") do %>
+  <%= form_tag(user_path, :method => "get") do %>
     <%= label_tag(:q, "Email:") %>
     <%= text_field_tag(:q) %>
     <%= submit_tag("Search") %>

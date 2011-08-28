@@ -11,11 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110828210228) do
+ActiveRecord::Schema.define(:version => 20110828213935) do
 
   create_table "apikeys", :force => true do |t|
     t.string   "key"
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rapleafdata", :force => true do |t|
+    t.string   "age"
+    t.string   "gender"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

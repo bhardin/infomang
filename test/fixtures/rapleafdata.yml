@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  age: MyString
+  gender: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+
+two:
+  age: MyString
+  gender: MyString
+  city: MyString
+  state: MyString
+  country: MyString
