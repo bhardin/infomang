@@ -1,4 +1,6 @@
 Infomang::Application.routes.draw do
+  resources :apikeys
+
   resources :users
 
   root :to => "home#index"

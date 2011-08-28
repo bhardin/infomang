@@ -1,0 +1,23 @@
+<h1>Listing apikeys</h1>
+
+<table>
+  <tr>
+    <th>Key</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @apikeys.each do |apikey| %>
+  <tr>
+    <td><%= apikey.key %></td>
+    <td><%= link_to 'Show', apikey %></td>
+    <td><%= link_to 'Edit', edit_apikey_path(apikey) %></td>
+    <td><%= link_to 'Destroy', apikey, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Apikey', new_apikey_path %>
