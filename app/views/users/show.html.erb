@@ -1,20 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>First name:</b>
-  <%= @user.first_name %>
-</p>
+<div id="data">
+  <p id="name"><%= @user.first_name %> <%= @user.last_name %></p>
 
-<p>
-  <b>Last name:</b>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
-
+  <div id="user-data">
+    <b>Email:</b> <%= @user.email %>
+    <br/>
+    <% if !@user.rapleafdata.blank? %>
+      <b>Age:</b> <%= @user.rapleafdata.age %>
+      <br/>
+      <b>Gender:</b> <%= @user.rapleafdata.gender %></br>
+      <b>City:</b> <%= @user.rapleafdata.city %></br>
+      <b>State:</b> <%= @user.rapleafdata.state %></br>
+      <b>Country:</b> <%= @user.rapleafdata.country %></br>
+    <% end %>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

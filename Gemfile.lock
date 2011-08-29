@@ -83,6 +83,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass (>= 0.11.5)
+  json
   rails (= 3.0.10)
   rapleaf_api
   sqlite3

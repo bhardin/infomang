@@ -52,3 +52,18 @@ body.two-col {
 div#home {
   @include container;
 }
+
+div#data {
+  @include column(10);
+  @include prepend(5);
+  @include append(5);
+  text-align: left;
+}
+
+p#name {
+  font-size: 2.2em;
+}
+
+div#user-data {
+  font-size: 1.1em;
+}

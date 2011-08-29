@@ -541,3 +541,28 @@ div#home {
   overflow: hidden;
   *zoom: 1;
 }
+
+/* line 56, ../../app/stylesheets/screen.scss */
+div#data {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 390px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html div#data {
+  overflow-x: hidden;
+}
+
+/* line 63, ../../app/stylesheets/screen.scss */
+p#name {
+  font-size: 2.2em;
+}
+
+/* line 67, ../../app/stylesheets/screen.scss */
+div#user-data {
+  font-size: 1.1em;
+}
