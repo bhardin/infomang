@@ -14,10 +14,6 @@
   <% end %>
 
   Add a user:
-  <%= form_tag(users_path, :method => "create") do %>
-    <%= label_tag(:q, "Email:") %>
-    <%= text_field_tag(:q) %>
-    <%= submit_tag("Search") %>
-  <% end %>
+  <%= render 'users/form' %>
 
 </div>
